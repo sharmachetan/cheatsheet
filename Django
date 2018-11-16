@@ -1,0 +1,30 @@
+# Start New Django Project
+  django-admin create <project_name>
+  
+ #Login to current django shell
+  python manage.py shell
+  
+ #Virtual Environment
+ 
+ 
+  
+    1. PIPENV .
+    
+      ## Installtion 
+        # MAC
+          - brew install pipenv
+       
+       #Initialize virtual env to new directory
+        -pipenv install
+        
+        # Activate Virtual Env shell
+        - pipenv shell
+        
+        # Run a command without activating the virtual env
+        - pipenv run < command >
+        
+        # List all install dependencies
+        - pipenv graph
+        
+        # 
+        
