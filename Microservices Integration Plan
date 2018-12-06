@@ -1,0 +1,52 @@
+Phases Involded :
+
+Phase 1 : 
+  1. Requirement Identification
+  2. Understanding with Solution Architect and identifying respective development teams involved (list teams/departements)
+  3. Create flow and dependency diagram on Teams for respective functionality
+  
+  3. Decide :
+    1. build Version of code/Repository for each service/team/ 
+    2. On output of setup 1 , Setup integration environment for all different services ( who will do it , dev/devops/other)
+    3. Which team should deliver first than others or a way to mock api if possible.
+    4. Gather MOCK responses from individual teams outside Integration Team to provide it to integration team. 
+    
+ 
+    Setup Meeting with integration team
+  4. Inform developer teams about :
+    1. Their respective code build versions required to work upon
+    2. Point of contact in case of queries
+    3. Confirm if developers/concern teams has there developement environment.  T
+    
+  5. Deciding Estimates from individual team and create a devlivery stack
+    1. ETA Team 1
+    2. ETA Team 2
+    3. ETA Team 3
+    
+    
+  
+ -- Risks Involded
+  1. Fatal Crash of dev environment
+  2. Partial understanding of requirement
+  3. Absence of acountable dev person
+  4. Changing requirement
+  5. Diffent Versions of microservices involved
+  6. Complex dependency of Services over each other. 
+  
+ -- Issues Developing with Microservices:
+  1. Logging Mechanism for debugging
+      We should not check logs of individual service separately .Instead they should be seen on a single log.
+  2. Maintaining version of individual Microservices
+      Sol : Dev system should be up through a version sheet of all services.
+  3. Development Environment for developer 
+      sol. if servies are interdependent than every service should be hosted individually not in a tomcat
+  4. Git Checking mechanism
+      Problem : if individual developers keep on pushing there changes without informing others , then other developer face 
+                incompatibility issues during development. 
+      sol : One person should be responsible to merge changes to repo and he/she should do it after a successful sprint
+  5. Frequent updgrade of Core services used by wrapper services.
+  6. Single Build sequence of all services( core ) as a complete package for (wrapper services)
+  7. Single EAR deployment rather that individual WARs deployment.
+  
+    
+    
