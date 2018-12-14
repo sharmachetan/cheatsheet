@@ -7,9 +7,11 @@ Phase 1 :
   
   3. Decide :
     1. build Version of code/Repository for each service/team/ 
-    2. On output of setup 1 , Setup integration environment for all different services ( who will do it , dev/devops/other)
+    2. On output of 1, Setup integration environment for all different services ( who will do it , dev/devops/other)
     3. Which team should deliver first than others or a way to mock api if possible.
     4. Gather MOCK responses from individual teams outside Integration Team to provide it to integration team. 
+    5. Specific Condition: while contacting any service/endpoint/json ask if there is any field/value/condition which we need to 
+        take care while genereating the response ( e.g srms does not need 'id' field )
     
  
     Setup Meeting with integration team
@@ -23,7 +25,7 @@ Phase 1 :
     2. ETA Team 2
     3. ETA Team 3
     
-    
+   
   
  -- Risks Involded
   1. Fatal Crash of dev environment
