@@ -29,6 +29,10 @@ Phase 1 :
     2. ETA Team 2
     3. ETA Team 3
     
+   6. Regression Testing
+    1. Test the already decided changes
+    2. If any new change is introduced change, again run a full system check.
+    
    
   
  -- Risks Involded
@@ -38,7 +42,8 @@ Phase 1 :
   4. Changing requirement
   5. Diffent Versions of microservices involved
   6. Complex dependency of Services over each other. 
-  7. Delayed response from other dependent team member creates delay in integration. 
+  7. Delayed response from other dependent team member creates delay in integration.
+  8. Time Extension: if any new change is introduced from any team , delivery time may be affected as it involves regression and integration testing.
   
  -- Issues Developing with Microservices:
   1. Logging Mechanism for debugging
