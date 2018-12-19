@@ -13,6 +13,7 @@ Phase 1 :
     5. Specific Condition: while contacting any service/endpoint/json ask if there is any field/value/condition which we need to 
         take care while genereating the response ( e.g srms does not need 'id' field )
     6. Validation End points on every team. Teams should be clear who will validate what response before during info exchange between microservices.
+      (Consumer should validate befofe consuming ideally)
     
  
     Setup Meeting with integration team
